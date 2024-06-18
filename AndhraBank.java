@@ -29,8 +29,8 @@ System.out.println("a1.address");
 System.out.println("a2.accountNumber");
 }
 public static void main(String args[]){
-StateBank a1=new andhraBank();
-StateBank a2=new andhraBank();
+AndhraBank a1=new AndhraBank ();
+AndhraBank a2=new AndhraBank ();
 a1.accountNumber=32140764;
 a1.address="renigunta";
 a1.noOfBranches=2;
