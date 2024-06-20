@@ -31,6 +31,16 @@ System.out.println("no.of.items:"+m1.noOfItems);
 System.out.println("brideHeight:"+m1.brideHeight);
 System.out.println("groomHeight:"+m1.groomHeight);
 System.out.println("getSeatingCapacity:"+seatingCapacity);
+Marriage m2 = new Marriage();
+m2.brideName = "Ravi";
+m2.groomName = "Jamuna";
+m2.noOfRelatives = 500;
+m2.noOfItems = 15;
+m2.brideHeight = 5.5;
+m2.groomHeight = 6.0;
+m2.totalArea=480;
+m2.areaPerSeat=1;
+int seatingCapacity = m1.getSeatingCapacity();
 
 }
 
