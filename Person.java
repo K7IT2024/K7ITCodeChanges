@@ -1,4 +1,6 @@
   class Person{
+     private int age;
+     private String name;
     Person(){    
        System.out.println("I am inside person class constructor");
     }
