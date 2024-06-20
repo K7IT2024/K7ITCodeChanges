@@ -134,3 +134,4 @@ Write a HelloWrold program by using Java:
         byte code (.class): byte code or intermediate code
              it will be in alphanumeric and some special chars		
 		binary code: its is low level code or system understandable code.
+This is for Java installation.
