@@ -1,12 +1,12 @@
 //constructors
- class Main{
+ class constructors{
 
 	int x;
-	public Main(int y){
+	public constructors(int y){
 		x=y;
 	}
 	public static void main(String [] args){
-		Main myCon=new Main(5);
+		 constructors myCon=new constructors(5);
 		System.out.println(myCon.x);
 	}
 }
