@@ -1,0 +1,10 @@
+package com.k7it;
+
+public class TestDemo {
+
+	@SuppressWarnings("preview")
+	public static void main(String[] args) {
+		
+		System.out.println(STR."");
+	}
+}
