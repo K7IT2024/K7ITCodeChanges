@@ -1,2 +1,0 @@
-# K7IT_GNANA
-
