@@ -1,0 +1,318 @@
+
+
+  last method in object class is 
+  
+  finalized(): 
+  
+    protected void finalized(){
+	 //
+	}
+	
+	this method is defind for garbage collector purposr not developer purpose.
+	
+	GC : Gorbage collector, it will clean up the heap memory, if there is any aboarned objects or unused objects or orphan objects or nullyfy objects. 
+	
+	GC will works based on mark and sweep alorigtham ,
+	
+	mark : when ever gc will come for 1st execuiton if it find any unused objects , it will mark that object and it will call the finalized() by using that null object. 
+	
+	what is the resposibility of finalized : it will verify is there any open resources inside that object or is any important resources are using inside that object, is there is any resources like that it will close that resources and add to available list.
+	
+	for example : if take database connections objects or input stream objects or output stream object etc , these objects are available only limited count. 
+	
+user 	used resources   available resources
+	
+	0                    10
+	2					  8
+	5					  5
+	10					  0
+	8					  2
+	
+	in case of db connections we will maitain only limited connections 
+	
+	from our class we can use data base connections to save or fetch data from database
+	
+	   1. open connection  - when open no of available connections will reduce by 1
+	   2. use connection obj and get data or save data or delete data 
+	   3. close connection. : when we will close the connection it will add to available connection list and count will increase one 
+	   
+	   
+	Person {
+	
+	savePerson(){
+	
+	   // open connection();
+	   
+	   con.save(person obj);
+	   
+	   con.close();
+	}
+	
+	updatePerson(){
+	
+	   // open connection();
+	   
+	   con.update(person obj);
+	   // here might be some exception came close connection operation not excuted.
+	   con.close();
+	}
+	
+	deletePerson(){
+	
+	   // open connection();
+	   
+	   con.delete(person obj);
+	   // he forgot to close the connection. 
+	}
+	
+	}
+	
+	Employee {
+	
+	}
+	
+	
+	
+	
+	finalized(): finalized method resposibility is recheck inside aboarned object before deleting either that object is using any open resources objects, ifit find any open resources then finalized method will close those connections and add to available list and it will go. 
+	
+	then when next time gc will come for excution he will delete that object. 
+	
+	when gc will come first time excution it will mark the object and it will finalized method and it will go. 
+	
+	then finalized() will perfom checking and closing and adding any open resources in that object.
+	
+	next one is we will start Strin class :
+	=======================================
+	
+	String class: String class is one of the important class in java , it is available under java.lang package, so we can use this class diretly like object class. 
+	
+	string class mainly using for manpulating or storing alphanumeric data into a variable. 
+	
+	for string class we can create objects in 2 ways , 
+	
+	1. litteralway 
+	2. using new operator 
+	
+	String s1 = "abc";//litteralway
+	String s2  = "xyz"//litteralway
+	
+	String s1 = new String("abc");
+	String s1 = new String("xyz");
+	
+	String class is a immutable class : here immutable means once we create the object we can't modify data inside object in the same memory location, if we try to modify the data in oject it will create another object with modify data in another memory location. 
+	
+	
+	String s1  = "abc"
+    s1 = "abc"+"123"= "abc123"
+	s1 = "abc"+"xyz" = "abcxyz"
+    s1 = "raju"
+  "abc" - 1001
+  "123" - 1002
+  abc123 - > 1003
+  xyz -> 1004
+  abc xyz -> 1005
+ sa1 ->  "raju"  - 1006 
+  
+  
+  person p1 = new person()
+  
+  p1.age = 20;
+  p1.age = 30+10;
+  pa.name = "abc";
+  p1.name ="xyz"
+  
+  here if u do 100 time modify the person class object it will create only one object in the heap memory. 
+  
+  once we create the object if we want change any value in the same memory location, its called as immutable object. 
+  
+  or
+  once we create the object we cant modify any object means that is called immutable object.
+  
+  String class methods:
+  ====================
+  toString(): it will convert obj value into a string format
+  this method already overriden in the string so it will work based on content of the object. 
+  
+  indexOf(char c): it will return the index position of given char in the string object, incase char is not present in the string obj it will return -1;
+  
+  
+   index will start from 0 and end with n-1 
+   count will start from 1 and end with n 
+   
+   String s1 = "hellow world";
+                01234567891011
+   sop(s1.indexOf("d"));// 11
+   sop(s1.indexOf("w"));// 5
+   sop(s1.indexOf("o"));// 4
+   sop(s1.indexOf("e"));// 1
+   sop(s1.indexOf("s"));// -1
+   sop(s1.indexOf("llo"));// 2 
+   in case of semi string or sub string if u give for indexOf() it will return that word starting index. here "llo" is starting at 2nd index and end at 4 but we will get the output is 2.
+   
+   lastIndexOf():it will also return the index of given char or string from original string like indexOf();but here one difference is lastIndexOf will scan for the given chars from right to left endin to starting . 
+   
+     String s1 = "hellow world";
+                  01234567891011
+   sop(s1.lastIndexOf("d"));// 11
+   sop(s1.lastIndexOf("w"));// 7
+   sop(s1.lastIndexOf("o"));// 8
+   sop(s1.lastIndexOf("e"));// 1
+   sop(s1.lastIndexOf("s"));// -1
+   sop(s1.lastIndexOf("llo"));//  2
+   
+   how to find out what is  char preset at given index:
+   =========================================
+   
+   charAt(int index): this method will give the char from specifed index location , here index should be 0 to n-1.  here if index is less than zero or greater than n-1, we will get the IndexOutOfBoundException.
+   
+   String s1 = "hellow world";
+                01234567891011
+   
+   sop(s.charAt(4));// o
+   sop(s.charAt(10));// l
+   sop(s.charAt(20));// IndexOutOfBoundException 
+   sop(s.charAt(-10));// IndexOutOfBoundException 
+   
+   length(): this method will give count of number of chars are present in the string.
+   
+   
+    String s1 = "hellow world";
+                01234567891011
+				
+	sop(s1.length());// 12 - n
+	
+	String s2  = "abc";
+	sop(s2.length());// 3
+	
+	example : print the each char from given string :
+	=================================================
+	
+	
+	String s1 = "hellow world";
+	1st way using direct index:
+=============================	
+   sop(s1.charAt(0));
+   sop(s1.charAt(1));
+   sop(s1.charAt(2));
+   sop(s1.charAt(3));
+   sop(s1.charAt(4));
+   sop(s1.charAt(5));
+   sop(s1.charAt(6));
+   sop(s1.charAt(7));
+   sop(s1.charAt(8));
+   sop(s1.charAt(9));
+   sop(s1.charAt(10));
+   sop(s1.charAt(11));
+   
+   2nd way is uisng for loop:
+   =============
+   for(int i=0;i<s1.length();i++){
+	   sop(s1.charAt(i));
+	}
+	
+	substring(int startindex, int endIndex): this method will retun all the chars between startindex to endIndex as sub string from original string.
+	note: here startindex is a include operation but endIndex is a exclude operation.
+	
+    String s1 = "hellow world";
+                 01234567891011
+				
+    String s3   =  s1.substring(0,5);
+	sop(s3);hello
+	sop(s1.substring(7,10));// wor
+	
+	sop(s1.substring(3,9));//"low wo"
+	
+	if we want to get the some portion of the string from original string then we can use the substring method.
+	
+	substring(int startindex): this method will give the substring from startindex to end of the original string .
+	
+	   String s1 = "hellow world";
+                    01234567891011
+	sop(s1.substring(4));// "ow world"
+	sop(s1.substring(9));// "rld"
+	sop(s1.substring(0));// "hellow world"
+	
+	contains(String c):
+ ===================
+	by using contains method we can verify given char or substring is present in the original string, if it present it will give the boolean true value, if not presen tit will give the boolean false value.
+	
+	String s1 = "hellow world";
+                 01234567891011
+				 
+	Sop(s1.contains("llo"));// true 
+	Sop(s1.contains("Raju"));// false 
+	Sop(s1.contains("w"));// true 
+	Sop(s1.contains("lloH"));// false 
+	Sop(s1.contains("oello"));// false 
+	Sop(s1.contains("o"));// true 
+	
+	
+	chars(): this method it will convert given string into a char array.
+	
+	char[] chars =  s1.chars();
+	
+	split(String strRegex): this method also split the original string into multiple sub strings based on user provided delimiter and it will give output as multiple strings as arry format.
+	
+	String s1  = "hello world, good morning to every one.today we are discussing string class";
+	
+	String [] multipleStrs =  s1.split(".");// here we will get 2 string with index 0 to 1
+	//0.  hello world, good morning to every one
+	//1.  today we are discussing string class
+	
+	String s2 = "Hello world good morning";
+	
+	String s3[] = s2.split(" ");//  here we will get 4 strings  with index 0 to 3
+	// 0. hello 
+	   1. world
+	   2. good
+	   3. morning
+	sop(s3[0]);//hello
+	sop(s3[3]);//morning
+	sop(s3[2]);//good
+	
+	String s4[] =  s2.split(":");// here there is no given string char at original string , in this case whole string we will return as output at 0 index.
+	
+	// 0. Hello world good morning
+	
+	sop(s2);// Hello world good morning
+	sop(s4[0]);// Hello world good morning
+	
+	replace(String oldString, String newString): this method will replace old string with new string in original string if given old string is present in the original string. 
+	
+	
+	String s2 = "Hello world good morning";
+	
+	sop(s2.replace("Hello", "Bye"));// Bye World good morning
+	sop(s2.replace("o", "123"));// Hell123 w123rld g123123d m123rning
+	sop(s2.replace("Raju", "rani"));// Hello world good morning
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+   
+   
+   
+   
+   
+							  
+							  
+							  
+							  
+							  
+  
+  
+  
+	
+	
+	
+	
