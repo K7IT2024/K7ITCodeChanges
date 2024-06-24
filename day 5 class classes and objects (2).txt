@@ -1,0 +1,139 @@
+classes and Objects:
+=================================
+
+class: it is a real time entity or class is a factory of objects. 
+
+   it is act like catagory.  we can't touch or we cant see the catogies.
+
+real time entity: the thing which is having properties and behaviours is called as real time entity.
+this real time entity is represent as a class in java.
+
+properties : the things which are using to identify or represents entity thse==ose are called as preoperties, 
+tho properties are represents as a attributes in java ,
+by using properties we can represents state of the object.
+
+behaviours: the functionality or activities of enity are called as behaviours.
+
+these behaviours of the entity are represents as methods in java.
+by using methods we can achive the activies or functions of entity .
+
+Object : instance of Entity is called as object. object is a real thing for that catagory, these objects we can see and we can touch it. but catogies we cant see or we cant touch.
+
+in java we can create object by using "new" operator. 
+
+   Syntax : 
+         ClassName refVar = new ClassName();
+		 
+		  Person p1  = new Person(); -> person class object.
+		  Animal a1 = new Animal();
+		  Address a2 = new Address();
+		  
+		  here new Perosn() -> is called as person class object
+		  p1 -> ref variable : if we want to do any comunication with that object we shoud use this ref var. 
+		  new : key word it act like father 
+		  className() : this is called as constructor , it is act like mother , it will give the initial state for the object. 
+		  
+		  
+          
+for example:
+    if we take person as a entity 
+	  it will contains following properties and behaviours
+	  
+	    properties :  age, name, height, weight, color , address etc...
+		behaviours : running capacity, eating capacity , learning capacity etc.
+		
+		
+		Person.java
+		class Person   --- Entity/class
+		{  
+		   // attributes or properties
+     		int age;
+		    String name;
+			double height;
+			double weight;
+			String color;	
+			
+			// method or behaviours
+			public double getRunRate(){
+			
+			   double runRate = (height * weight) / age;
+			   
+			   return runRate;
+			}	  
+		   
+		}
+		
+		PersonManager.java
+		=========================
+		public class PersonManager{
+		   public static void main(String args[]){
+		      /// create object for person class 
+			  
+			  Person p1 = new Person();  			  
+			  
+			  p1.age = 24;
+			  //p1.age ="abc";//CTE
+			  p1.name = "Tharun";
+			  p1.height = 5.6;
+			  p1.weight = 55.0;
+			  p1.color = "brown";
+			  
+			  double tharunRunRate  = p1.getRunRate(); // 5.6*55.0/24 = 12.8 
+			  
+			  System.out.println("Tharun details");
+			  System.out.println("Name:"+p1.name);
+			  System.out.println("age:"+p1.age);
+			  System.out.println("height:"+p1.height);
+			  System.out.println("Weight:"+p1.weight);
+			  System.out.println("color:"+p1.color);
+			  System.out.println("RunRate:"+tharunRunRate);
+			  
+			  Person p2 = new Person();
+			  p2.age = 24;
+			  p2.name = "sai";
+			  p2.height = 5.5;
+			  p2.weight = 66.0;
+			  p2.color = "gold";
+			  
+			  double saiRunRate  = p2.getRunRate(); //(5.5*66.0)/24 = 15.125
+			  
+			  System.out.println("Sai details");
+			  System.out.println("Name:"+p2.name);
+			  System.out.println("age:"+p2.age);
+			  System.out.println("height:"+p2.height);
+			  System.out.println("Weight:"+p2.weight);
+			  System.out.println("color:"+p2.color);
+			  System.out.println("RunRate:"+saiRunRate);
+		   }
+		}
+		
+		Here: 
+		new : operator it will create new object with the help of constructor 
+		. : access operator , it will help us to access any member of class like attributes or methods,  for either setting the values or getting or reading the values.
+		
+			   p1.name = "k7it"; // here we are accesing the name attribute from p1 object and setting value as k7it.
+			   
+			   sop(p1.name);// here we are reading  the name attirbute value from p1 object.
+			   
+	   Person() : this is called as constructor. 
+			   
+	    = : assigment operator : it will help us to assing right value into lefgt side variable or attribtes 
+		
+		+ : this operator will perform 2 operations for us 
+		    1. if both the values are numeric it will give sum of those 2 values as result .
+			  
+			     10+20 -> 30
+			2. if any one of the value is string or alphanumeric then it will perform 
+			   just simple concatination of two values as one value .
+			   
+			    "abc"+10 = abc10
+				"abc"+"xyz" = abcxyz
+				"10"+"20" = 1020
+				20+"abc" =  20abc
+				
+			// -> single line comment 
+			/* */ -> multi line comment 
+			
+			/ -> backward slash
+			\ -> forward slash
+			
