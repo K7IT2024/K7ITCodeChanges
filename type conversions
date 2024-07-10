@@ -1,0 +1,36 @@
+let a="456";
+let b=Number(456);
+console.log(typeof(a))
+console.log(b)
+console.log(typeof(b))
+let c=123
+let d=String(123)
+console.log(typeof(c))
+console.log(d)
+console.log(typeof(d))
+let number=234
+s=(234).toString()
+console.log(s)
+console.log(typeof(s))
+let e=new Date()
+console.log(typeof(e))
+console.log(e)
+console.log(Number(e))
+date=e.getTime()
+console.log(date)
+let f=String(e)
+console.log(f)
+console.log(typeof(f))
+console.log(e.toString())
+let bn=true
+console.log(Number(bn))
+console.log(typeof(bn))
+let num=1245
+console.log(Boolean(num))
+console.log(typeof(String(bn)))
+console.log(true.toString())
+let Animal={"Animal name":"Tiger",age:5,weight:50,colour:"orange"}
+console.log(Animal)
+console.log(Animal.age)
+console.log(Animal["Animal name"])
+console.log(Animal["age"])
