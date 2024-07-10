@@ -1,0 +1,12 @@
+Arrays : by using arrays we can store multiple values using same variable name with the help of index.
+======
+												OR
+		Arrays are sequence of continues memory locations, each memeory location will be identified by index.
+
+--> index will satrt from (0 to n-1) and count will start from (1 to n).	
+
+--> 
+
+								
+
+

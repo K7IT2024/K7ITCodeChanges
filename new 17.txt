@@ -1,0 +1,45 @@
+import java.util.*;
+
+public class ArrayOperations {
+    public static void main(String[] args) {
+        String[] a1 = {"India", "China", "Bangladesh", "UK", "US", "India", "UK", "US", "India"};
+        String[] a2 = {"Pakistan", "UK", "China", "India", "Srilanka"};
+
+        // Question 1: Find duplicate records in both arrays
+        Set<String> duplicateRecords = findDuplicateRecords(a1, a2);
+        System.out.println("Duplicate Records in both arrays: " + duplicateRecords);
+
+        // Question 2: Print country frequency in a map
+        Map<String, Integer> countryFrequencyMap = getCountryFrequencyMap(a1, a2);
+        System.out.println("Country Frequency Map:");
+        for (Map.Entry<String, Integer> entry : countryFrequencyMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+
+    public static Set<String> findDuplicateRecords(String[] a1, String[] a2) {
+        Set<String> setA1 = new HashSet<>(Arrays.asList(a1));
+        Set<String> setA2 = new HashSet<>(Arrays.asList(a2));
+
+        Set<String> duplicates = new HashSet<>(setA1);
+        duplicates.retainAll(setA2);
+
+        return duplicates;
+    }
+
+    public static Map<String, Integer> getCountryFrequencyMap(String[] a1, String[] a2) {
+        Map<String, Integer> frequencyMap = new HashMap<>();
+
+        for (String country : a1) {
+            String normalizedCountry = country.toLowerCase();
+            frequencyMap.put(normalizedCountry, frequencyMap.getOrDefault(normalizedCountry, 0) + 1);
+        }
+
+        for (String country : a2) {
+            String normalizedCountry = country.toLowerCase();
+            frequencyMap.put(normalizedCountry, frequencyMap.getOrDefault(normalizedCountry, 0) + 1);
+        }
+
+        return frequencyMap;
+    }
+}

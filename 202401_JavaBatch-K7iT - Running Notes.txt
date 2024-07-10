@@ -1,0 +1,80 @@
+Software : The process of converting our imaginaries into a reality by using set of programmes is called as software.
+
+Softwares are divided into three categories i.e.,
+													1) System Software
+													2) Application Software
+													3) Internet Software
+
+1) System Software:
+	
+	--> It is a software which is used to control the functionality of hardwares.
+	--> These softwares are also called as Stand alone Softwares.
+		Eg: Washing machine, JCB, oven, car, Robo etc.
+		
+	--> Scope of the System Software is within the device.
+		
+2) Application Software:
+
+	--> It is a software which is used to control the functionality of organizational oriented process these softwares 
+		are called as Application Softwares.
+	
+	--> These softwares are also called as Intranet Application.
+		Eg: Hospital Management Softwares, College Management Softwares, Telephone service within the building etc. 
+		
+	--> Scope of the Application Software is within the Organization.
+
+		
+3) Internet Software:
+
+	--> It is a software which is used through internet anywhere in the world( WWW ) those softwares are called as 
+		Internet Softwares.
+	--> These Applications are also called as a World Wide Web(WWW) Application.
+	
+	--> Scope of the Internet Software is Entire world.
+
+	
+	Applications are divided into two categories:
+													1) Stand Alone Applications
+													2) Distributed Applications
+											
+	1) Stand Alone Applications:
+		
+		Where the Software is installed in that device only we can able to use that softwares, those softwares are 
+		called as stand alone applications.
+		
+		Eg: VLC player, Antivirus Software etc.
+		
+		These type of softwares we can't share with others i.e., 
+		
+		All System Software and Application Softwares are comes under Stand Alone Applications
+		
+	2) Distributed Applications:
+	
+		All internet applications are called as Distributed Applications.
+		These Softwares we can access from anywhere through internet.
+		
+		Eg: 
+		
+		
+		
+	What is the symbol of java?
+	
+		--> Hot Coffee Cup is the first symbol of java.
+	
+	When java is introduced in the Market?
+	
+		--> January 1991
+		
+	Which company published java first time?
+	
+		--> Sun Mcro Systems has published java for the first time.
+		
+	What is the cartoon symbol of java?
+	
+		--> Duke
+		
+	
+		
+	
+
+	 

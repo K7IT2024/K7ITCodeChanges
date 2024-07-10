@@ -1,0 +1,15 @@
+Class Person{
+	
+	int i;
+	int i1;
+	int i2;
+}
+
+Person p1; --> Null
+
+Person p1 = new Person();
+		|
+		|
+		|-----> i = 0
+				i1 = 0
+				i2 = o
