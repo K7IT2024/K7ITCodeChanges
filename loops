@@ -1,0 +1,25 @@
+//for loop//
+for(k=0;k<=5;k++){
+    console.log(k)
+}
+//nested for loop//
+let i=1
+ for(;i<=5;i++){     
+    for(let j=0;j<=i;j++){ 
+      console.log(j) 
+    }
+    console.log(i); 
+ }
+ //while loop//
+ let m=1
+while(m<=5){
+    console.log(m)
+    m++
+}
+//do while//
+let a=1
+do{
+  console.log(a)
+  a++
+}while(a<5)
+
