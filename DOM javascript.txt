@@ -1,0 +1,33 @@
+<html>
+<title>K7IT login page</title>
+<head>
+</head>
+<div class="name">
+<font color="orange">
+<h1> <center>K7IT login site</h1>
+<body background="D:\bg image.jpg">
+<font color="red">
+</div>
+<div class="name">
+<center>
+<label>user name:</label>
+<input type="text" id="user name" placeholder="user name"/><br><br>
+<label>password:</label>
+<input type="password"/><br><br>
+<a href=file:///D:/html_practice/registration%20form.html ><font color=white>register</font></a>
+<button><a href="file:///D:/html_practice/K7IT%20website.html">signin</a></button>
+<a href=file:///D:/html_practice/forgot%20password.html><font color=white>forgot password</font></a>
+</font>
+</center>
+</div>
+<script>
+let result=document.getElementsByClassName("name")
+console.log(result)
+let tagresult=document.getElementsByTagName("input")
+console.log(tagresult)
+let Result=document.querySelector("input")
+console.log(Result)
+</script>
+</body>
+</font>
+</html>
