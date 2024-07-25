@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <title>registration form</title>
+    <center>
+    <head>
+            <h1>REGISTRATION FORM</h1>
+    </head>
+    <style>
+        .error{
+            color: red;
+        }
+
+    </style>
+    <body>
+        <form id="registrationform" onsubmit="return validation()">
+                <label id="username"><b>USERNAME:</label>
+                <input type="text" placeholder="username"></input><br>
+                <span id="usernameError" class="error"></span><br>
+
+                <label id="email">EMAIL:</label>
+                <input type="email" placeholder="email"></input><br>
+                <span id="emailError" class="error"></span><br>
+
+                <label id="password">PASSWORD:</label>
+                <input type="password" placeholder="password"></input><br>
+                <span id="emailError" class="error"></span><br>
+
+                <label id="confirmpassword">CONFIRM PASSWORD:</b></b></b></label>
+                <input type="password" placeholder="confirmpassword"></input><br>
+                <span id="emailError" class="error"></span><br>
+
+                <input type="submit" value="Register"></input>
+        </form>
+    </body>
+    </center>   
+    <script src="ValidationForm.js"> </script>
+</html>
