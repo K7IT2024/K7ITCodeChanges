@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<body>
+    <script>
+            //Array methods
+            //1.length
+            var fruit=["apple","mango","banana"];
+            var len=fruit.length
+            document.write(len + "<br>"); 
+
+            //2.push();  
+            var no=[1,2,3,4,5,6,7];
+            var newno=no.push(8);
+            document.write(no +"<br>");
+            document.write(newno + "<br>"); 
+
+           // 3.pop();
+            var rem=["orange","yellow","green","blue"];
+            var newrem=rem.pop();
+            document.write(rem + "<br>");
+            document.write(newrem + "<br>");
+
+           // 4.concat(); 
+            var num=[12,34,5,6,67,77];
+            var str=["apple","mango","banana"];
+            var newconcat=num.concat(str);
+            document.write(newconcat + "<br>");
+
+            //5.join();  
+            var numb=[12,34,5,6,67,77];
+            var stri=["apple","mango","banana"];
+            var newjoin=numb.join(stri);
+            document.write(newjoin + "<br>");
+            
+           // 6.shift();
+            var no=[1,2,3,4,5,6,7];
+            var newno=no.shift();
+            document.write(no +"<br>");
+            document.write(newno + "<br>"); 
+
+            //7.unshift();
+            var no=[1,2,3,4,5,6,7];
+            var newno=no.unshift(8);
+            document.write(no +"<br>");
+            document.write(newno + "<br>");
+
+            //8.slice();
+            var sli=[12,23,34,4534,34,34];
+            var newsli=sli.slice(2);
+            document.write(newsli + "<br>");
+            document.write(sli + "<br>");
+
+            //9.splice();
+            var spl=[1,2,3,4,5,6,7,8,9];
+            var newspl=spl.splice(0,4);
+            document.write(newspl+ "<br>");
+            document.write(spl);
+
+    </script>
+</body> 
+</html>
