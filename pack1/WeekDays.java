@@ -25,6 +25,6 @@ public enum WeekDays {
 
 	public static void main(String[] args) {
 		WeekDays w1=WeekDays.FRIDAY;
-		//System.out.println(w1);
+		System.out.println(w1);
 	}
 }
