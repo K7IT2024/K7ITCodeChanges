@@ -1,38 +1,40 @@
-package com.k7it;
+package JavaClasses;
 
-class Bc {
-	int i = 30;
-	String name = "k7it";
-
-	Bc(int i, String name) {
-		System.out.println(name);
-		System.out.println(i);
+interface A{
+	void m1();
+	default void m2() {
+		System.out.println("sai the kingmaker");
 	}
-
-	Bc() {
-		System.out.println("no_arg");
+	static void m3() {
+		System.out.println("babureddy");
 	}
+	void m4();
+	
 }
 
-public class B extends Bc {
-	public int i = 50;
-
+public class B implements A {
+	
+	
+	public void m1() {
+		System.out.println("implementation m1 method come from interface A");
+	}
+	public void m4() {
+		System.out.println("implementing m2 method come from interface A");
+	}
 	public static void main(String[] args) {
-		Bc b1 = new Bc(40, "py");
-
-		System.out.println(b1.name);
-		B b2 = new B();
-		// new B().m1();
-		// new B().m2();
-		b2.m2();
+	
+		A a1=new B();
+		a1.m1();
+		a1.m2();
+		A.m3();
+		a1.m4();
+		B b1=new B();
+		b1.m1();
+		b1.m2();
+		A.m3();
+		b1.m4();
+		
+	
 	}
 
-	public int m1() {
-
-		return 10 + 2;
-	}
-
-	void m2() {
-		System.out.println(m1());
-	}
 }

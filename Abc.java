@@ -1,42 +1,25 @@
-package com.k7it;
+package JavaClasses;
 
-abstract class Ab {
-	int i;
 
-	Ab(int i) {
-		System.out.println("Ab");
-	}
-
-	Ab() {
-		System.out.println("super");
-	}
+class Reddya{
+	void Babu() {
+		 System.out.println("1st method inside class");
+	 }
+	 static void Reddys() {
+		 System.out.println("static method inside this class");
+	 }
 
 }
-
-class Abc extends Ab {
-	int j;
-
-	public void vehicle() {
-
+public class Abc extends Reddya {
+	void Babu() {
+		System.out.println("overriding the super class method inside sub class");
 	}
-
-	Abc() {
 	
-	}
-
-	Abc(int j) {
-		super(j);
-		this.j=j;
-		super.i = j;
-		this.i = j;
-		System.out.println("Abc");
-	}
-
 	public static void main(String[] args) {
-		Abc a1 = new Abc();
-		Abc a2 = new Abc(20);
-
+		Abc ab=new Abc();
+		ab.Babu();
+		Abc.Reddys();
 	}
-
+	
+	 
 }
-

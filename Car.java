@@ -1,58 +1,23 @@
+package JavaClasses;
 
-package com.k7it;
 
-interface Vehicle {
+	class Car implements Vehicle{
+		public void Release() {
+			System.out.println("manufactured car releasing in the market");
+		}
+	public void Manufauturing() {
+	  System.out.println("manufacturing the car");
+		}
+		
+		
+		public static void main(String[] args) {
+			Car c1=new Car();
+			c1.Manufauturing();
+			c1.Release();
+			System.out.println(c1.age);
+			System.out.println(c1.name);
+		}
 
-	public abstract void moving();
-
-	public abstract void working();
-
-	public static void running() {
-		System.out.println("static Method");
+		
 	}
 
-	public default void sound() {
-		System.out.println("Default Method");
-	}
-}
-
-class Car implements Vehicle {
-	public static void main(String args[]) {
-		Car c1 = new Car();
-		c1.moving();
-		c1.working();
-		Vehicle.running();
-		c1.running();
-		c1.sound();
-		Bus c2 = new Bus();
-
-		c2.moving();
-		c2.working();
-		Vehicle.running();
-		c2.sound();
-	}
-
-	public void moving() {
-		System.out.println("car is moving");
-	}
-
-	public void working() {
-		System.out.println("car is working");
-	}
-
-	public  void running() {
-		System.out.println("overriding Method");
-	}
-
-}
-
-class Bus implements Vehicle {
-	public void moving() {
-		System.out.println("Bus is moving");
-	}
-
-	public void working() {
-		System.out.println("Bus is working");
-	}
-
-}
