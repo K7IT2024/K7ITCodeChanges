@@ -1,0 +1,28 @@
+package JavaPackage;
+
+public class Duplicate {
+	
+	//private static final String continues = null;
+
+	String s= "abcdcd";
+	
+	String result="";
+	
+		for(int i= 0;i<s.length();i++) {
+			
+			String s1 = ""+s.charAt(i);
+			
+		} 
+		
+		
+		if(s1.contains s) {
+			continues;
+			
+		}
+		result+=s1;
+		
+	}
+	
+	
+
+}

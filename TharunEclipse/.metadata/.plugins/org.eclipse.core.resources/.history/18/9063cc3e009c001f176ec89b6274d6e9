@@ -1,0 +1,26 @@
+package WrapperPack1;
+
+public class UnBoxing {
+
+	public static void main(String[] args) {
+		
+		
+		Integer i1 = new Integer(10);
+		
+		int i = i1.intValue();
+		
+		
+		System.out.println(i1);
+		System.out.println(i);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

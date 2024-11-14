@@ -1,0 +1,23 @@
+package ArrayPack1;
+
+public class Animal {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		Animal a1[]=new Animal[5];
+		
+	System.out.println(a1);
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

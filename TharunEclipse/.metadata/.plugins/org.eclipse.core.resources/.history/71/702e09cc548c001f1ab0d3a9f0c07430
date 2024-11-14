@@ -1,0 +1,43 @@
+package Org.Tharun;
+
+public class A {
+
+	void m1() {
+		
+		System.out.println("A-m1");
+	}
+	
+}
+
+	class B extends A{
+		void m1() {
+		System.out.println("B-m1");
+		
+	}
+	
+	}
+	class c extends A{
+		
+		
+	}
+	
+	class D extends A{
+		void m1() {
+			System.out.println("D-m1");
+		}
+		
+	}
+		class E extends A{
+			void m1() {
+		System.out.println("E-m1");
+		
+		
+		}
+		}		
+	
+	
+	
+	
+	
+	
+

@@ -1,0 +1,50 @@
+package DynamicPack1;
+
+import java.util.Scanner;
+
+
+public class Scanner2 {
+
+	public static void main(String[] args) {
+		
+		boolean b1=false;
+		
+		do {
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("please enter name");
+			
+			String = 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,27 @@
+package String.com;
+
+public class ImmuString {
+	
+	private String name;
+	
+		ImmuString(){
+			this.name=name;
+		}
+	
+	
+	public ImmuString getName() {
+		
+		this.name=name;
+		
+	}
+	
+	
+	public String toString() {
+		
+		return this.name;
+		
+	}
+	
+	
+
+}

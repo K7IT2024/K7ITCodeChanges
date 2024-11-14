@@ -1,0 +1,41 @@
+package ArrayPack1;
+
+public class Arrays2 {
+
+	
+	//static int i [];
+	
+	//static String s[];
+	
+	
+	
+	public static void main(String[] args) {
+		
+		//int i1 []=new int[2];
+		
+		//int[]i2 ;
+		
+		int i[] = new int[5];
+		
+		
+		//System.out.println(i2);
+		//System.out.println(s);
+		
+		i[0]=43;
+		i[1]=78;
+		i[2]=43;
+		i[3]=7;
+		i[4]=4;
+		
+		
+		
+		System.out.println(i[0]);
+		System.out.println(i[1]);
+		System.out.println(i[2]);
+		System.out.println(i[3]);
+		System.out.println(i[4]);
+		
+	}
+	
+
+}

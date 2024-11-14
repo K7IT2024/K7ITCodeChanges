@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;propertypack1.Properties.java&apos; to &apos;Properties1.java&apos;&#x0D;&#x0A;- Original project: &apos;Propertiesproject&apos;&#x0D;&#x0A;- Original element: &apos;propertypack1.Properties.java&apos;&#x0D;&#x0A;- Renamed element: &apos;propertypack1.Properties1.java&apos;" description="Rename compilation unit &apos;Properties.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;propertypack1{Properties.java" name="Properties1.java" references="false" stamp="1731040802337" version="1.0"/>
+</session>

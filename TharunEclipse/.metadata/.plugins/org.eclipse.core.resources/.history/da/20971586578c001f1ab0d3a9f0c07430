@@ -1,0 +1,19 @@
+package Org.Tharun;
+
+public class Xmain {
+	
+	
+	
+	 public static void main(String[] args) {
+		
+	
+				
+				X x1 = new X();
+				x1.x1();
+				
+				x1.x2();
+		 
+		 
+	}
+
+}

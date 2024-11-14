@@ -1,0 +1,44 @@
+package WrapperPack1;
+
+public class UnBoxing {
+
+	public static void main(String[] args) {
+		
+		//auto un boxing 
+		Integer i1 = new Integer(10);
+		
+		int i = i1.intValue();
+		
+		//string to primitive
+		
+		String s1 = "100";
+				
+		int i2 = Integer.parseInt(s1);
+		
+		//string to wrapper 
+		
+		String s2 = "121";
+		
+		Float f1 = Float.valueOf(s2);
+		
+		
+		
+		System.out.println(f1);
+		System.out.println(s1);
+		
+		
+		
+		System.out.println(i1);
+		System.out.println(i);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

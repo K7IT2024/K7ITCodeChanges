@@ -1,0 +1,5 @@
+package Callingpack;
+
+public interface CallingServiceInterface {
+
+}

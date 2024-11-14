@@ -1,0 +1,34 @@
+package com.K7it;
+
+public class Tharun extends Person{
+
+	void m1() {
+		System.out.println("Tharun-m1");
+	}
+	
+	void m2() {
+		
+		System.out.println("tharun-m2");
+	}
+	void m3() {
+		System.out.println("tharun-m3");
+	}
+
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Tharun t1 = new Tharun();
+		t1.m1();
+		t1.m2();
+		t1.m3();
+		
+		Person p1 = new Person();
+		p1.m1();
+		p1.m2();
+		p1.m3();
+		
+	}
+
+}

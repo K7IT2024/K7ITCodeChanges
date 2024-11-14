@@ -1,0 +1,18 @@
+package String.com;
+
+public class StringP {
+	
+	public static void main(String[] args) {
+		
+		
+		StringP s1  = new StringP();
+		
+		s2=	"HelloWorld";
+		
+		System.out.println(s2.indexOf("H"));
+		
+		
+	}
+	
+
+}

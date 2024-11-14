@@ -1,0 +1,18 @@
+package String.com;
+
+public class StringParc {
+	
+	 String s1= "hello_world";
+	
+	
+	
+	public static void main(String[] args) {
+		
+		String(s1.indexof(""));
+		
+		
+		
+	}
+	
+
+}

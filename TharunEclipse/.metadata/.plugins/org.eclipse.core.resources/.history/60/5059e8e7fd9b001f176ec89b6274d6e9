@@ -1,0 +1,27 @@
+package WrapperPack1;
+
+public class WrapperDemo {
+public static void main(String[] args) {
+	
+
+	int i = 10;
+	
+	//Integer i1 = new Integer(i);
+	
+	Integer i2 = new Integer(10);
+	
+	//Integer i3 = Integer valueof(i);
+	
+	String s1 = "10";
+	
+	Integer i5 = new Integer("10");
+	
+	Integer i6 = new Integer(s1);
+	
+	
+	
+	
+	System.out.println(i);
+	System.out.println(10);
+}
+}

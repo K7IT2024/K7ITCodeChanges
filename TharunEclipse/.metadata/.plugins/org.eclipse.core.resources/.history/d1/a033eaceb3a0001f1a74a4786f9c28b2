@@ -1,0 +1,7 @@
+package ArrayPack1;
+
+public class person {
+
+	
+	person[] p1 = new person[8];
+}

@@ -1,0 +1,39 @@
+package DynamicPack1;
+
+i
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class Dynamic_3rd {
+
+	
+	public static void main(String[] args) {
+		
+		//String name = System.getProperty("name");
+		
+		
+//		int age = Integer.parseInt(System.getProperty("age"));
+//		
+//		double ht=Double.parseDouble(System.getProperty("ht"));
+//		
+//		double wt = Double.parseDouble(System.getProperty("wt"));
+//				
+//		
+//		
+//		System.out.println("Name:"+name+",Age:"+age+",ht:"+ht+",wt:"+wt);
+//		
+//		
+//		
+		Properties p = System.getProperties();
+		
+		FileInputStream in = new FileInputStream("E:\jdktharun\TharunEclipse\Dynamic_input_3rd\src\DynamicPack1\Dynamic_3rd.java"));
+		
+		p.load(in);
+		
+		
+		//FileReader r = new FileReader();
+		
+
+	}
+
+}

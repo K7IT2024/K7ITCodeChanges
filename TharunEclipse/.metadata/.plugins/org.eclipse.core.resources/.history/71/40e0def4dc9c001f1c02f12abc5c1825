@@ -1,0 +1,9 @@
+package DynamicPack1;
+
+public class Captial {
+
+	public Captial() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,13 @@
+package ArrayPack1;
+
+public class Digonals3 {
+
+	public static void main(String[] args) {
+		
+		int a[][][]=new int [4][4][4];
+		
+		
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package propertypack1;
+
+public class Immutable {
+
+	public Immutable() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

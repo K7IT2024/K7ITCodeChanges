@@ -1,0 +1,109 @@
+package propertypack1;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Properties {
+
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		Properties p1 = new Properties();
+		
+		FileReader f = new FileReader("E:\\jdktharun\\TharunEclipse\\Propertiesproject\\src\\propertypack1\\MyFile.Properties");
+		
+		p1.load(f);
+		
+		
+		
+		System.out.println(p1.System.getProperty("name"));
+		
+		
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//String name = System.getProperty("name");
+//
+//int age = Integer.parseInt(System.getProperty("age"));
+//
+//double ht = Double.parseDouble(System.getProperty("ht"));
+//
+//double wt = Double.parseDouble(System.getProperty("wt"));
+//
+//
+//System.out.println("Name:"+name+",Age:"+age+",Ht:"+ht+",wt:"+wt);
+//

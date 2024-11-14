@@ -1,0 +1,32 @@
+package ArrayPack1;
+
+public class ArraysFor {
+	
+	public static void main(String[] args) {
+		
+		int t[] = new int[10];
+		int k=23;
+		for(int i=0;i<t.length;i++) {
+			t[i]=++k;
+		}
+		System.out.println(t[0]);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

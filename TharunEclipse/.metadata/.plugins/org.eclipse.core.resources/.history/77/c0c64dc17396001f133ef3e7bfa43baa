@@ -1,0 +1,25 @@
+package String.com;
+
+public class StringParc {
+	
+		StringParc(){
+			
+			
+		}
+	
+	static  String s1= "hello_world";
+	
+	
+	
+	public static void main(String[] args) {
+		
+		StringParc s1 = new StringParc();
+		
+		String(s1.indexOf("d"));
+		
+		System.out.println(s1);
+		
+	}
+	
+
+}

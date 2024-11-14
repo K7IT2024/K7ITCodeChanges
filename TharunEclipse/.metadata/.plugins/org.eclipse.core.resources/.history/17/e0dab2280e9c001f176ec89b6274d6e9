@@ -1,0 +1,9 @@
+package WrapperPack1;
+
+public class WrapperParcties {
+
+	public WrapperParcties() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

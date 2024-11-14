@@ -1,0 +1,9 @@
+package propertypack1;
+
+public class SingleTone {
+
+	public SingleTone() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

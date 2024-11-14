@@ -1,0 +1,14 @@
+package propertypack1;
+
+public class Properties4 {
+
+	public Properties4() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

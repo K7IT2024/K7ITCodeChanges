@@ -1,0 +1,51 @@
+package DynamicPack1;
+
+
+import java.util.Scanner;
+
+
+public  class Scanner1{
+
+
+	public static void main(String[] args) {
+		
+		
+		boolean flag;
+		
+		do {
+		Scanner sc = new Scanner(System.in );
+		
+		System.out.println("please enter your name");
+		String name = sc.next();
+		
+		System.out.println("please enter your age");
+		int age = sc.nextInt();
+		
+		
+		System.out.println("please enter your height");
+		double height=sc.nextDouble();
+		
+		
+		System.out.println("please enter your weight");
+		double weight=sc.nextDouble();
+		
+		
+	System.out.println("do you want print another Details:please enter true or false");
+		 flag = sc.nextBoolean();
+		}
+		while(flag) ;
+		
+		
+		
+		System.out.println("execution stopped");
+		
+		
+		System.out.println(args);
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+		System.out.println(args[2]);
+		
+		
+	}
+
+}

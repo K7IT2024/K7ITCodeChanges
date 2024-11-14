@@ -1,0 +1,31 @@
+package ArrayPack1;
+
+public class Arrays1 {
+
+	//static int i[];
+	
+	int i [] = new int[23];
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println(i);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
