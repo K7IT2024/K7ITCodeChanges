@@ -1,0 +1,24 @@
+package String.com;
+
+public class StringP {
+
+	public static void main(String[] args) {
+
+		// StringP s1 = new StringP();
+
+		String s2 = "Hello_World";
+		// s2="";
+		System.out.println(s2.indexOf("H"));
+
+		for (int i = 0; i < s2.length(); i++) {
+			System.out.println(i);
+			}
+
+//		for (int i =0;i<s2.length();i++) {
+//			
+//			reverse = s2.charAt(i)+reverse;
+	}
+
+	}
+
+}

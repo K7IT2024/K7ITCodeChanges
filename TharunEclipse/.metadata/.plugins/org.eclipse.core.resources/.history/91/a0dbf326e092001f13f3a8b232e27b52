@@ -1,0 +1,17 @@
+package ObjectPackage1;
+
+public class CalculatorManager {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		Calculator c = new Calculator();
+		c1.age;
+		
+		
+		
+	}
+
+}

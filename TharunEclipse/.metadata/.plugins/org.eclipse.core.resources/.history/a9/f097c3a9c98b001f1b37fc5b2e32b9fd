@@ -1,0 +1,51 @@
+package com.K7it;
+
+public interface Vehical {
+
+	void fixEngine();
+	void fixBreaks();
+	void fixWheels();
+	void fixBody();
+	
+}
+
+
+class Lorry implements Vehical{
+
+	@Override
+	public void fixEngine() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fixBreaks() {
+		System.out.println("fixed Breaks");
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fixWheels() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fixBody() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	
+	
+	Lorry l1 = new Lorry ();
+	
+	l1.fixBreaks();
+	
+	}
+	
+}

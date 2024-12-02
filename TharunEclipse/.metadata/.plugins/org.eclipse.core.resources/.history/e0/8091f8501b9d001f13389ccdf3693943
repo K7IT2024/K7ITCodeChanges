@@ -1,0 +1,14 @@
+package DynamicPack1;
+
+public class Dynamic_3rd {
+
+	public Dynamic_3rd() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

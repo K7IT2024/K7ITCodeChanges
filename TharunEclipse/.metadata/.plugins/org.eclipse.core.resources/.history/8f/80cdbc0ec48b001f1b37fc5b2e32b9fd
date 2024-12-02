@@ -1,0 +1,136 @@
+package com.K7it;
+
+abstract public class Person {
+
+	int age;
+	String name;
+	double height;
+	double weight;
+	
+	
+	
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	void m1() {
+
+		System.out.println("Person-m1");
+
+	}
+
+	void m2() {
+
+		System.out.println("person-m2");
+
+	}
+
+	void m3() {
+
+		System.out.println("person-m3");
+	}
+
+}
+
+class Tharun extends Person{
+	
+	int age;
+	String name;
+	double height;
+	double weight;
+	
+	
+	
+	
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	void m1() {
+		System.out.println("Tharun-m1");
+	}
+	
+	void m2() {
+		
+		System.out.println("tharun-m2");
+	}
+	void m3() {
+		System.out.println("tharun-m3");
+	}
+	
+
+	public static void main(String[] args) {
+	
+		//Person p1 = new Person();
+		
+		//p1.m1();
+		
+		Tharun t1 = new Tharun(67,"tharun",6.0,70.00);
+		t1.m1();
+		t1.m2();
+		t1.m3();
+		
+		System.out.println(t1.age);
+		System.out.println(t1.name);
+		System.out.println(t1.height);
+		System.out.println(t1.weight);
+		}
+		}

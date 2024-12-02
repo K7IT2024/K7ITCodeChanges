@@ -1,0 +1,23 @@
+package propertypack1;
+
+public class Properties2 {
+
+	public static void main(String[] args) {
+		
+		
+		String name = System.getProperty("name");
+		
+		int age = Integer.parseInt(System.getProperty("age"));
+		
+		
+		System.out.println("Name:"+name+", Age:"+age);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

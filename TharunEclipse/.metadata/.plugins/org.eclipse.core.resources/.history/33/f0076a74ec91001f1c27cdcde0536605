@@ -1,0 +1,10 @@
+package Subpackage;
+
+public interface Isubservice {
+	
+	 int div(int k ,int j);
+	 int mul(int k,int j);
+	
+	
+
+}

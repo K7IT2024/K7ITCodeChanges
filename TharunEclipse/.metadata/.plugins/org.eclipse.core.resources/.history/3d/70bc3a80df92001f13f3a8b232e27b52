@@ -1,0 +1,20 @@
+package ObjectPackage1;
+
+public class Calculator {
+	
+	int age;
+	String name;
+	double height;
+	double weight;
+	
+	
+	public Calculator(){
+		
+	}
+	
+	public Calculator(int age,String name,double height,double weight) {
+		
+	}
+	
+
+}

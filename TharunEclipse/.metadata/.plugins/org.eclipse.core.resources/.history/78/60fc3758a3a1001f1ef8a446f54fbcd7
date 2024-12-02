@@ -1,0 +1,42 @@
+package ArrayPack1;
+
+import java.util.Arrays;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		int a[]=new int[5];
+		
+		a[0]=20;
+		a[1]=30;
+		a[2]=40;
+		a[3]=50;
+		a[4]=60;
+		
+		Arrays.sort(a);
+		
+		System.out.println(a.toString());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+	@Override
+	public String toString() {
+		return "Sorting []";
+	}
+
+}

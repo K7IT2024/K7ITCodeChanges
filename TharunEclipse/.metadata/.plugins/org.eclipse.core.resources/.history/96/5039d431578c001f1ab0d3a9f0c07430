@@ -1,0 +1,41 @@
+package Org.Tharun;
+
+public class X {
+	
+	
+	void x1() {
+		
+		System.out.println("first-x1");
+	}
+	
+	void x2() {
+		
+		System.out.println("second x2");
+	}
+
+}
+
+
+class Z extends X{
+	
+	void X1() {
+		
+		System.out.println("first-z1");
+	}
+	
+	
+void X2() {
+		
+		System.out.println("second -z2");
+	}
+	
+	public static void main(String[] args) {
+		
+		X x1 = new X();
+		x1.x1();
+		
+		x1.x2();
+	}
+
+
+}

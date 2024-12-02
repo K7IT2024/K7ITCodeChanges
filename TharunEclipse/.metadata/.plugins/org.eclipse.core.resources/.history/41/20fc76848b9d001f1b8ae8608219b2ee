@@ -1,0 +1,136 @@
+package propertypack1;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Properties {
+
+	
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+		String name = System.getProperty("name");
+		
+		int age = Integer.parseInt(System.getProperty("age"));
+		
+		double ht = Double.parseDouble(System.getProperty("ht"));
+		
+		double wt = Double.parseDouble(System.getProperty("wt"));
+		
+		
+		System.out.println("Name:"+name+",Age:"+age+",Ht:"+ht+",wt:"+wt);
+		
+
+		
+		
+		Properties p2= System.getProperties();
+		System.out.println(p2);
+		
+		
+		
+		
+		
+		java.util.Properties p1 = System.getProperties();
+		
+		FileReader r1 = new FileReader("E:\\jdktharun\\TharunEclipse\\Propertiesproject\\src\\propertypack1\\MyFile.Properties");
+		
+		p1.load(r1);
+		
+		
+		
+		System.out.println(p1.getProperty("name"));
+		System.out.println(p1.getProperty("age"));
+		System.out.println(p1.getProperty("ht"));
+		System.out.println(p1.getProperty("wt"));
+		
+		
+		
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//String name = System.getProperty("name");
+//
+//int age = Integer.parseInt(System.getProperty("age"));
+//
+//double ht = Double.parseDouble(System.getProperty("ht"));
+//
+//double wt = Double.parseDouble(System.getProperty("wt"));
+//
+//
+//System.out.println("Name:"+name+",Age:"+age+",Ht:"+ht+",wt:"+wt);
+//

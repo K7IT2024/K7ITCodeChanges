@@ -1,0 +1,51 @@
+package DynamicPack1;
+
+public class Dynamic_values_3rd {
+
+
+public static void main(String[] args) {
+	
+     
+	String name = System.getProperty("name");
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//double wt =  Double.pardouble ht =  Double.parseDouble(System.getProperty("ht"));
+//	String name = System.getProperty("name");seDouble(System.getProperty("wt"));
+//	int age =  Integer.parseInt(System.getProperty("age"));
+//	
+//	System.out.println("Name:"+name+",age:"+age+",Ht:"+ht+",wt:"+wt);
+//	
+
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+	
+	
+	
+	
+}
+
+
+
+

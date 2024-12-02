@@ -1,0 +1,23 @@
+package propertypack1;
+
+public class Properties4 {
+
+	
+
+	public static void main(String[] args) {
+	
+		
+		String name = System.getProperty("name");
+		
+		Double ht = Double.parseDouble(System.getProperty("ht"));
+		
+		
+		System.out.println("Name:+name+","Ht:"+Ht+ );
+		
+		
+		
+		
+
+	}
+
+}

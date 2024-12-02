@@ -1,0 +1,23 @@
+package ArrayPack1;
+
+import java.util.Arrays;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+
+		int a[] = new int[5];
+
+		a[0] = 20;
+		a[1] = 90;
+		a[2] = 80;
+		a[3] = 30;
+		a[4] = 10;
+
+		Arrays.sort(a);
+		for (int v : a)
+			System.out.println(v);
+
+	}
+
+}

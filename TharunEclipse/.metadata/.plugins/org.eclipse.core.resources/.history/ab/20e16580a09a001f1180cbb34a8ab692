@@ -1,0 +1,31 @@
+package JavaPackage;
+
+public class RemoveDuplicate {
+
+	public static void main(String[] args) {
+
+		String s = "HI every one,hello every one ,welcome to java world and hello world ";
+
+		String distStr = removeDuplicateWord(s);
+
+	}
+
+	private static String removeDuplicateWord(String s) {
+		//String[] s1=s.split(" ");
+		for(int i=0 ; i<s.length();i++) {
+		String s1=" "+s.charAt(i);
+		if(s1.contains(s)) {
+			continue;
+		}else {
+			s1+=s;
+		}
+		return null;
+		}
+		//System.out.println(s);
+		return s;
+	}
+
+	
+	
+	
+}

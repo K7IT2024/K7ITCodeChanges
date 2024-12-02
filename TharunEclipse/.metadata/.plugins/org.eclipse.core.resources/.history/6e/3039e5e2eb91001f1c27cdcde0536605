@@ -1,0 +1,16 @@
+package Subpackage;
+
+public class ImpleSubService extends Isubservice {
+
+	
+	public int div (int k , int j) {
+		return  k,j;
+	}
+	
+	
+	public int mul (int k , int j) {
+		return  k,j;
+	}
+	
+	
+}

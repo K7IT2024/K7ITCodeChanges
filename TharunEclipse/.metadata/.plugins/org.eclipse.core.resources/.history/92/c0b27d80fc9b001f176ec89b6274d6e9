@@ -1,0 +1,9 @@
+package WrapperPack1;
+
+public class WrapperDemo {
+
+	int i = 10;
+	
+	Integer i1 = new Integer(i);
+
+}

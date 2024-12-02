@@ -1,0 +1,101 @@
+package propertypack1;
+
+import java.io.FileReader;
+
+public class Properties {
+
+	public static void main(String[] args) {
+		
+		Properties p1 = new Properties();
+		
+		FileReader f = new FileReader("E:\\jdktharun\\TharunEclipse\\Propertiesproject\\src\\propertypack1\\MyFile.Properties");
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//String name = System.getProperty("name");
+//
+//int age = Integer.parseInt(System.getProperty("age"));
+//
+//double ht = Double.parseDouble(System.getProperty("ht"));
+//
+//double wt = Double.parseDouble(System.getProperty("wt"));
+//
+//
+//System.out.println("Name:"+name+",Age:"+age+",Ht:"+ht+",wt:"+wt);
+//

@@ -1,0 +1,10 @@
+package Callingpack;
+
+public class CallingService {
+
+	void m1() ;
+	void m2() ;
+	
+	
+	
+}

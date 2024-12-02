@@ -1,0 +1,29 @@
+package JavaPackage;
+
+public class Java {
+	
+	int age;
+	String name;
+	double height;
+	double weight;
+	
+	Java(int age,String name,double height,double weight){
+		this.age=age;
+		this.name=name;
+		this.height=height;
+		this.weight=weight;
+		
+	}
+	
+	public static void main(String[] args) {
+		Java java = new Java(20,"tharun",7.0,67.00);
+		
+	
+		
+		
+	}
+	
+	
+	
+
+}

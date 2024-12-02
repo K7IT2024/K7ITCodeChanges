@@ -1,0 +1,30 @@
+package Org.Tharun;
+
+public class Tharun {
+	
+	
+	void m1() {
+		System.out.println("tractor 1 -0536");
+	}
+	
+	
+	void m2() {
+		
+		System.out.println("tractor 2 = 6844");
+	}
+
+	
+  void m3() {
+		
+		System.out.println("tractor 3 = 3676");
+	}
+
+
+	
+}
+
+
+class Teja extends Tharun{
+	
+	
+}

@@ -1,0 +1,17 @@
+package com.K7it;
+
+public interface x {
+
+	public abstract void fixEngine();
+	public abstract  void fixWheels();
+	public abstract void fixBody();
+	public abstract  void fixBreaks();
+	
+}
+
+
+class Y implements X{
+	
+	
+	
+}

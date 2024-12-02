@@ -1,0 +1,9 @@
+package DynamicPack1;
+
+public class DuplicateWords {
+
+	public DuplicateWords() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

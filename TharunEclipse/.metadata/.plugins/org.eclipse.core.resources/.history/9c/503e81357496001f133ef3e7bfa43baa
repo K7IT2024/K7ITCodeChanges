@@ -1,0 +1,28 @@
+package String.com;
+
+public class StringParc {
+	
+		private int age;
+		private String name;
+		
+	
+	
+	
+	public StringParc(int age, String name) {
+			super();
+			this.age = age;
+			this.name = name;
+		}
+
+
+
+
+	public static void main(String[] args) {
+		
+		StringParc s1 = new StringParc(30,"tharun");
+		
+		System.out.println(s1);
+	}
+	
+
+}

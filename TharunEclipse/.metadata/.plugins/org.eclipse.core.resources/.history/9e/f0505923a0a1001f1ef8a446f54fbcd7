@@ -1,0 +1,15 @@
+package ArrayPack1;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+		
+		int a[]=new int[5];
+		
+		for(int value:a) {
+			System.out.println(value);
+		}
+
+	}
+
+}

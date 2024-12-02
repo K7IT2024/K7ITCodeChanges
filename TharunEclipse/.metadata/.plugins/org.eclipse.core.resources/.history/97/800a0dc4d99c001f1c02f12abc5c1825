@@ -1,0 +1,9 @@
+package DynamicPack1;
+
+public class Duplicate {
+
+	public Duplicate() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
